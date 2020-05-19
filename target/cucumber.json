@@ -1,0 +1,2121 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6010000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user accepts content type as \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_accepts_content_type_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-19T15:56:01.983Z",
+        "before": [
+          {
+            "result": {
+              "duration": 593000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "User should be able to create teacher profile and verify status code is 200",
+        "description": "",
+        "id": "user-should-be-able-to-create-a-teacher-profile-from-api-and-verify-that-it-displayed-on-the-ui;user-should-be-able-to-create-teacher-profile-and-verify-status-code-is-200",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2766000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user sends POST request to \"teacher/create\" with following information:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teacher/create\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_sends_POST_request_to_with_following_information(java.lang.String,java.util.List\u003cjava.util.Map\u003cjava.lang.String, java.lang.Object\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "batch",
+                  "birthDate",
+                  "department",
+                  "emailAddress",
+                  "firstName",
+                  "gender",
+                  "joinDate",
+                  "lastName",
+                  "password",
+                  "phone",
+                  "premanentAddress",
+                  "salary",
+                  "section",
+                  "subject"
+                ]
+              },
+              {
+                "cells": [
+                  "11",
+                  "11/11/2001",
+                  "Computer",
+                  "marteen@email.com",
+                  "Marteen",
+                  "male",
+                  "05/16/2020",
+                  "Loup",
+                  "12345",
+                  "12345689",
+                  "Paris",
+                  "3000",
+                  "IT",
+                  "Test"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user verifies that response status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user verifies that response content type is \"application/json;charset\u003dUTF-8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json;charset\u003dUTF-8\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_content_type_is(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user accepts content type as \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_accepts_content_type_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-19T15:56:11.399Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User should not be able to create a teacher profile when \u0027batch\u0027 information is zero in API",
+        "description": "",
+        "id": "user-should-be-able-to-create-a-teacher-profile-from-api-and-verify-that-it-displayed-on-the-ui;user-should-not-be-able-to-create-a-teacher-profile-when--batch--information-is-zero-in-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 416000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user sends POST request to \"teacher/create\" with following information:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teacher/create\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_sends_POST_request_to_with_following_information(java.lang.String,java.util.List\u003cjava.util.Map\u003cjava.lang.String, java.lang.Object\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "batch",
+                  "birthDate",
+                  "department",
+                  "emailAddress",
+                  "firstName",
+                  "gender",
+                  "joinDate",
+                  "lastName",
+                  "password",
+                  "phone",
+                  "premanentAddress",
+                  "salary",
+                  "section",
+                  "subject"
+                ]
+              },
+              {
+                "cells": [
+                  "0",
+                  "11/11/2001",
+                  "Maths",
+                  "alex@email.com",
+                  "Alex",
+                  "male",
+                  "05/16/2020",
+                  "Torr",
+                  "12345",
+                  "12345689",
+                  "Paris",
+                  "3000",
+                  "IT",
+                  "Test"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user verifies that response status code is 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user verifies that response content type is \"application/json;charset\u003dUTF-8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json;charset\u003dUTF-8\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_content_type_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3674000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user verifies that response body give \"Batch is required! Please add Batch tag.\" error message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batch is required! Please add Batch tag.\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_body_give_error_message(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user accepts content type as \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_accepts_content_type_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-19T15:56:15.504Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2448000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "User should be able to see in UI to created teacher profile  API",
+        "description": "",
+        "id": "user-should-be-able-to-create-a-teacher-profile-from-api-and-verify-that-it-displayed-on-the-ui;user-should-be-able-to-see-in-ui-to-created-teacher-profile--api",
+        "after": [
+          {
+            "embeddings": [
+              {
+                "data": "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",
+                "mime_type": "image/png"
+              }
+            ],
+            "result": {
+              "duration": 4318000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.tearDownUI(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 858000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user sends POST request to \"teacher/create\" with following information:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teacher/create\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_sends_POST_request_to_with_following_information(java.lang.String,java.util.List\u003cjava.util.Map\u003cjava.lang.String, java.lang.Object\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "batch",
+                  "birthDate",
+                  "department",
+                  "emailAddress",
+                  "firstName",
+                  "gender",
+                  "joinDate",
+                  "lastName",
+                  "password",
+                  "phone",
+                  "premanentAddress",
+                  "salary",
+                  "section",
+                  "subject"
+                ]
+              },
+              {
+                "cells": [
+                  "5",
+                  "05/11/2001",
+                  "Computer",
+                  "alexander@email.com",
+                  "Alexander",
+                  "male",
+                  "05/16/2020",
+                  "Syrup",
+                  "12345",
+                  "12345689",
+                  "Paris",
+                  "3000",
+                  "IT",
+                  "Test"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8243000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user lands \"http://cybertektraining.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://cybertektraining.com/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_lands(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2345000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user navigates to \"Teachers\" tab then \"All Teacher\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Teachers\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"All Teacher\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_navigates_to_tab_then_module(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat com.cybertekTraining.pages.APIFunctions.getIntegerValueFromBodyPath(APIFunctions.java:40)\r\n\tat com.cybertekTraining.pages.teachers.ActionTeachers.searchCreatedTeachersID(ActionTeachers.java:28)\r\n\tat com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_searches_created_teacher_s_id(TeachersStepDefinitions.java:54)\r\n\tat ✽.user searches created teacher\u0027s id(file:///C:/Users/mkurt/.eclipse/NewTestCybertekApi/src/test/resources/features/createTeacher.feature:30)\r\n",
+              "duration": 43000000,
+              "status": "failed"
+            },
+            "line": 30,
+            "name": "user searches created teacher\u0027s id",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_searches_created_teacher_s_id()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "user verify that created teacher email matches with the API",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verify_that_created_teacher_email_matches_with_the_API()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      }
+    ],
+    "name": "User should be able to create a teacher profile from API and verify that it displayed on the UI",
+    "description": "  Also user should not create a teacher profile without batch information",
+    "id": "user-should-be-able-to-create-a-teacher-profile-from-api-and-verify-that-it-displayed-on-the-ui",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/createTeacher.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 6
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-19T15:56:01.973Z",
+        "before": [
+          {
+            "result": {
+              "duration": 602000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
+            }
+          },
+          {
+            "result": {
+              "duration": 7813000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "User able to verify students are exist in both and UI and API by the id number",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-student-profile-from-ui-and-verify-that-it-displayed-on-the-api;user-able-to-verify-students-are-exist-in-both-and-ui-and-api-by-the-id-number;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1107000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.tearDownUI(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5566000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user lands \"http://cybertektraining.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://cybertektraining.com/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_lands(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3223000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to \"Students\" tab then \"All Students\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Students\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"All Students\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_navigates_to_tab_then_module(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7180000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches students by the batch number \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_searches_students_by_the_batch_number(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 380000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user save students ids",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_save_students_ids()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 314000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user sends GET request to \"student/batch/\"1 and accepts content type as \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student/batch/\"",
+                  "offset": 26
+                },
+                {
+                  "val": "1",
+                  "offset": 42
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 72
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_sends_GET_request_to_and_accepts_content_type_as(java.lang.String,int,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user verifies that response status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user verifies that response content type is \"application/json;charset\u003dUTF-8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json;charset\u003dUTF-8\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_content_type_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2313000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user verifies that students ids match with UI",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_verifies_that_students_ids_match_with_UI()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-19T15:56:30.479Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6299000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "User able to verify students are exist in both and UI and API by the id number",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-student-profile-from-ui-and-verify-that-it-displayed-on-the-api;user-able-to-verify-students-are-exist-in-both-and-ui-and-api-by-the-id-number;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 799000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.tearDownUI(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3930000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user lands \"http://cybertektraining.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://cybertektraining.com/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_lands(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1604000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to \"Students\" tab then \"All Students\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Students\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"All Students\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_navigates_to_tab_then_module(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2761000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches students by the batch number \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_searches_students_by_the_batch_number(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 172000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user save students ids",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_save_students_ids()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 277000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user sends GET request to \"student/batch/\"2 and accepts content type as \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student/batch/\"",
+                  "offset": 26
+                },
+                {
+                  "val": "2",
+                  "offset": 42
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 72
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_sends_GET_request_to_and_accepts_content_type_as(java.lang.String,int,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user verifies that response status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user verifies that response content type is \"application/json;charset\u003dUTF-8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json;charset\u003dUTF-8\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_content_type_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user verifies that students ids match with UI",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_verifies_that_students_ids_match_with_UI()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-19T15:56:46.414Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5838000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "User able to verify students are exist in both and UI and API by the id number",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-student-profile-from-ui-and-verify-that-it-displayed-on-the-api;user-able-to-verify-students-are-exist-in-both-and-ui-and-api-by-the-id-number;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 769000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.tearDownUI(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4684000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user lands \"http://cybertektraining.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://cybertektraining.com/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_lands(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1594000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to \"Students\" tab then \"All Students\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Students\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"All Students\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_navigates_to_tab_then_module(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2411000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches students by the batch number \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_searches_students_by_the_batch_number(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 165000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user save students ids",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_save_students_ids()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 222000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user sends GET request to \"student/batch/\"3 and accepts content type as \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student/batch/\"",
+                  "offset": 26
+                },
+                {
+                  "val": "3",
+                  "offset": 42
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 72
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_sends_GET_request_to_and_accepts_content_type_as(java.lang.String,int,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user verifies that response status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user verifies that response content type is \"application/json;charset\u003dUTF-8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json;charset\u003dUTF-8\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_content_type_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 133000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user verifies that students ids match with UI",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_verifies_that_students_ids_match_with_UI()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-19T15:57:02.233Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5583000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "User able to verify students are exist in both and UI and API by the id number",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-student-profile-from-ui-and-verify-that-it-displayed-on-the-api;user-able-to-verify-students-are-exist-in-both-and-ui-and-api-by-the-id-number;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 891000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.tearDownUI(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3568000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user lands \"http://cybertektraining.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://cybertektraining.com/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_lands(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1560000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to \"Students\" tab then \"All Students\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Students\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"All Students\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_navigates_to_tab_then_module(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2436000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches students by the batch number \"8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"8\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_searches_students_by_the_batch_number(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 136000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user save students ids",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_save_students_ids()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 231000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user sends GET request to \"student/batch/\"8 and accepts content type as \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student/batch/\"",
+                  "offset": 26
+                },
+                {
+                  "val": "8",
+                  "offset": 42
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 72
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_sends_GET_request_to_and_accepts_content_type_as(java.lang.String,int,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user verifies that response status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user verifies that response content type is \"application/json;charset\u003dUTF-8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json;charset\u003dUTF-8\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_content_type_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 180000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user verifies that students ids match with UI",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_verifies_that_students_ids_match_with_UI()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-19T15:57:16.818Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5535000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User able to verify students are exist in both and UI and API by the id number",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-student-profile-from-ui-and-verify-that-it-displayed-on-the-api;user-able-to-verify-students-are-exist-in-both-and-ui-and-api-by-the-id-number;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 749000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.tearDownUI(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3213000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user lands \"http://cybertektraining.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://cybertektraining.com/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_lands(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1358000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to \"Students\" tab then \"All Students\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Students\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"All Students\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_navigates_to_tab_then_module(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2732000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches students by the batch number \"9\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"9\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_searches_students_by_the_batch_number(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 667000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user save students ids",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_save_students_ids()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 259000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user sends GET request to \"student/batch/\"9 and accepts content type as \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student/batch/\"",
+                  "offset": 26
+                },
+                {
+                  "val": "9",
+                  "offset": 42
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 72
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_sends_GET_request_to_and_accepts_content_type_as(java.lang.String,int,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user verifies that response status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user verifies that response content type is \"application/json;charset\u003dUTF-8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json;charset\u003dUTF-8\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_content_type_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12351000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user verifies that students ids match with UI",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_verifies_that_students_ids_match_with_UI()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-19T15:57:43.688Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5597000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "User able to verify students are exist in both and UI and API by the id number",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-student-profile-from-ui-and-verify-that-it-displayed-on-the-api;user-able-to-verify-students-are-exist-in-both-and-ui-and-api-by-the-id-number;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 762000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.tearDownUI(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5632000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user lands \"http://cybertektraining.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://cybertektraining.com/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_lands(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1812000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to \"Students\" tab then \"All Students\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Students\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"All Students\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_navigates_to_tab_then_module(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2401000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches students by the batch number \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_searches_students_by_the_batch_number(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 187000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user save students ids",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_save_students_ids()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 253000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user sends GET request to \"student/batch/\"10 and accepts content type as \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student/batch/\"",
+                  "offset": 26
+                },
+                {
+                  "val": "10",
+                  "offset": 42
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 73
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_sends_GET_request_to_and_accepts_content_type_as(java.lang.String,int,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user verifies that response status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user verifies that response content type is \"application/json;charset\u003dUTF-8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json;charset\u003dUTF-8\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_content_type_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 276000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user verifies that students ids match with UI",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_verifies_that_students_ids_match_with_UI()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-19T15:58:00.616Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5522000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "User able to verify students are exist in both and UI and API by the id number",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-student-profile-from-ui-and-verify-that-it-displayed-on-the-api;user-able-to-verify-students-are-exist-in-both-and-ui-and-api-by-the-id-number;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 884000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.tearDownUI(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5901000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user lands \"http://cybertektraining.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://cybertektraining.com/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_lands(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1507000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to \"Students\" tab then \"All Students\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Students\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"All Students\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_navigates_to_tab_then_module(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1705000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches students by the batch number \"11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"11\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_searches_students_by_the_batch_number(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 392000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user save students ids",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_save_students_ids()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 380000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user sends GET request to \"student/batch/\"11 and accepts content type as \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student/batch/\"",
+                  "offset": 26
+                },
+                {
+                  "val": "11",
+                  "offset": 42
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 73
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_sends_GET_request_to_and_accepts_content_type_as(java.lang.String,int,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user verifies that response status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user verifies that response content type is \"application/json;charset\u003dUTF-8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json;charset\u003dUTF-8\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_content_type_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 475000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user verifies that students ids match with UI",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_verifies_that_students_ids_match_with_UI()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-19T15:58:17.386Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5623000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "User able to verify students are exist in both and UI and API by the id number",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-create-a-student-profile-from-ui-and-verify-that-it-displayed-on-the-api;user-able-to-verify-students-are-exist-in-both-and-ui-and-api-by-the-id-number;;9",
+        "after": [
+          {
+            "result": {
+              "duration": 703000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.tearDownUI(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4384000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user lands \"http://cybertektraining.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://cybertektraining.com/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_lands(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1859000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to \"Students\" tab then \"All Students\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Students\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"All Students\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_navigates_to_tab_then_module(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2122000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches students by the batch number \"12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_searches_students_by_the_batch_number(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5023000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user save students ids",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_save_students_ids()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 225000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user sends GET request to \"student/batch/\"12 and accepts content type as \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student/batch/\"",
+                  "offset": 26
+                },
+                {
+                  "val": "12",
+                  "offset": 42
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 73
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_sends_GET_request_to_and_accepts_content_type_as(java.lang.String,int,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user verifies that response status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user verifies that response content type is \"application/json;charset\u003dUTF-8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json;charset\u003dUTF-8\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_verifies_that_response_content_type_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5062000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user verifies that students ids match with UI",
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.students.StudentsStepDefinitions.user_verifies_that_students_ids_match_with_UI()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      }
+    ],
+    "name": "As a user i should be able to create a student profile from UI and verify that it displayed on the API",
+    "description": "",
+    "id": "as-a-user-i-should-be-able-to-create-a-student-profile-from-ui-and-verify-that-it-displayed-on-the-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/verifyStudents.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

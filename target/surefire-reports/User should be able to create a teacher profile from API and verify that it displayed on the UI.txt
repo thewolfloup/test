@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: User should be able to create a teacher profile from API and verify that it displayed on the UI
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 32.284 s <<< FAILURE! - in User should be able to create a teacher profile from API and verify that it displayed on the UI
+User should be able to see in UI to created teacher profile  API(User should be able to create a teacher profile from API and verify that it displayed on the UI)  Time elapsed: 18.28 s  <<< ERROR!
+java.lang.NullPointerException
+
