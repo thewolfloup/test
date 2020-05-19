@@ -15,29 +15,41 @@ public abstract class BasePage {
         PageFactory.initElements(Driver.get(),this);
     }
 
-    @FindBy(css = "li.list-inline-item:nth-of-type(3)")
-    public WebElement pageSubtitle;
-
-    public String getPageSubtitle(){
-        return pageSubtitle.getText();
-    }
-
+    /*
+     * click elements
+     * @param element
+     */
     public void click(WebElement element){
         BrowserUtils.waitForClickablility(element, 5);
         BrowserUtils.clickWithJS(element);
     }
 
+    /*
+     * input data to element inbox
+     * @param element
+     * @param text
+     */
     public void sendKeysToTextBox(WebElement element, String text){
         BrowserUtils.waitForVisibility(element, 5);
         element.sendKeys(text);
     }
 
+    /*
+     * select dropdown element by using select class
+     * @param element
+     * @param text
+     */
     public void selectDropdownElementByText(WebElement element, String text){
         BrowserUtils.waitForVisibility(element,5);
         Select select = new Select(element);
         select.selectByVisibleText(text);
     }
 
+    /*
+     * navigate to UI tab and modules
+     * @param tab
+     * @param module
+     */
     public void navigateToModule(String tab, String module) {
         String tabLocator = "//span[.=' "+tab+"']";
         String moduleLocator = "//a[text()='"+module+"']";

@@ -12,6 +12,9 @@ public class VerifyTeachers {
 
     private final APIFunctions apiFunctions = new APIFunctions();
 
+    /*
+     * Verifies that created email from API match with UI
+     */
     public void createdEmailMatchWithAPI(){
         String expectedEmail = apiFunctions.getStringValueFromBodyPath("emailAddress");
 

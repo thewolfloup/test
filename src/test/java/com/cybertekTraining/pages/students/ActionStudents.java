@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 public class ActionStudents extends BasePage {
-
+    //located elements by using page object model
     @FindBy(xpath = "(//*[@class='fa fa-bars'])[2]")
     public WebElement lineByLine;
 
@@ -21,14 +21,19 @@ public class ActionStudents extends BasePage {
     @FindBy(xpath = "//table/tbody/tr/td[2]")
     public List<WebElement> listOfElementsStudentIDs;
 
-    //protected List<String> listOfStudentsIDs;
-
+    /*
+     * Searches students by their batch number
+     * @param batch
+     */
     public void searchStudentsByBatchNumber(String batch){
         click(lineByLine);
         selectDropdownElementByText(batchDropdown,batch);
         click(searchButton);
     }
 
+    /*
+     * Saves students IDs
+     */
     public List<String> saveStudentsIDsAsList(){
         return BrowserUtils.getElementsText(listOfElementsStudentIDs);
     }

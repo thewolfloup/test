@@ -11,6 +11,7 @@ public class ActionTeachers extends BasePage {
 
     private final APIFunctions apiFunctions = new APIFunctions();
 
+    //located elements by using page object model
     @FindBy(xpath = "(//*[@class='fa fa-bars'])[2]")
     public WebElement lineByLine;
 
@@ -20,10 +21,17 @@ public class ActionTeachers extends BasePage {
     @FindBy(xpath = "//*[text()=' Search ']")
     public WebElement searchButton;
 
+    /*
+     * Goes to website url
+     * @param url
+     */
     public void landURL(String url){
         Driver.get().get(url);
     }
 
+    /*
+     * Searches created teacher ID in UI by saved teacherIDs from API
+     */
     public void searchCreatedTeachersID(){
         String teacherId = apiFunctions.getIntegerValueFromBodyPath("teacherId");
         System.out.println("teacherId = " + teacherId);
