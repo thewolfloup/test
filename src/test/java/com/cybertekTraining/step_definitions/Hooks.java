@@ -30,6 +30,7 @@ public class Hooks {
     @After("@ui")
     public void tearDownUI(Scenario scenario){
         System.out.println("I am reporting the results");
+        //provides screenshoot when step failed
         if (scenario.isFailed()) {
             final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png");

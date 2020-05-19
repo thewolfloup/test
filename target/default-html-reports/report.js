@@ -231,7 +231,7 @@ formatter.match({
   "location": "com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_searches_created_teacher_s_id()"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat com.cybertekTraining.pages.APIFunctions.getIntegerValueFromBodyPath(APIFunctions.java:40)\r\n\tat com.cybertekTraining.pages.teachers.ActionTeachers.searchCreatedTeachersID(ActionTeachers.java:28)\r\n\tat com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_searches_created_teacher_s_id(TeachersStepDefinitions.java:54)\r\n\tat ✽.user searches created teacher\u0027s id(file:///C:/Users/mkurt/.eclipse/NewTestCybertekApi/src/test/resources/features/createTeacher.feature:30)\r\n",
+  "error_message": "java.lang.NullPointerException\r\n\tat com.cybertekTraining.pages.APIFunctions.getIntegerValueFromBodyPath(APIFunctions.java:63)\r\n\tat com.cybertekTraining.pages.teachers.ActionTeachers.searchCreatedTeachersID(ActionTeachers.java:36)\r\n\tat com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_searches_created_teacher_s_id(TeachersStepDefinitions.java:54)\r\n\tat ✽.user searches created teacher\u0027s id(file:///C:/Users/mkurt/.eclipse/NewTestCybertekApi/src/test/resources/features/createTeacher.feature:30)\r\n",
   "status": "failed"
 });
 formatter.step({

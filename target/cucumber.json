@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6010000000,
+              "duration": 5634000000,
               "status": "passed"
             },
             "line": 6,
@@ -30,11 +30,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-05-19T15:56:01.983Z",
+        "start_timestamp": "2020-05-19T17:40:14.425Z",
         "before": [
           {
             "result": {
-              "duration": 593000000,
+              "duration": 866000000,
               "status": "passed"
             },
             "match": {
@@ -51,7 +51,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2766000000,
+              "duration": 2689000000,
               "status": "passed"
             },
             "line": 9,
@@ -159,7 +159,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 4000000,
               "status": "passed"
             },
             "line": 6,
@@ -178,7 +178,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-05-19T15:56:11.399Z",
+        "start_timestamp": "2020-05-19T17:40:23.643Z",
         "before": [
           {
             "result": {
@@ -198,7 +198,7 @@
         "steps": [
           {
             "result": {
-              "duration": 416000000,
+              "duration": 264000000,
               "status": "passed"
             },
             "line": 16,
@@ -288,7 +288,7 @@
           },
           {
             "result": {
-              "duration": 3674000000,
+              "duration": 2121000000,
               "status": "passed"
             },
             "line": 21,
@@ -323,7 +323,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 6,
@@ -342,23 +342,23 @@
         ]
       },
       {
-        "start_timestamp": "2020-05-19T15:56:15.504Z",
+        "start_timestamp": "2020-05-19T17:40:26.038Z",
         "before": [
+          {
+            "result": {
+              "duration": 2321000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          },
           {
             "result": {
               "status": "passed"
             },
             "match": {
               "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
-            }
-          },
-          {
-            "result": {
-              "duration": 2448000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
             }
           }
         ],
@@ -375,7 +375,7 @@
               }
             ],
             "result": {
-              "duration": 4318000000,
+              "duration": 3565000000,
               "status": "passed"
             },
             "match": {
@@ -388,7 +388,7 @@
         "steps": [
           {
             "result": {
-              "duration": 858000000,
+              "duration": 256000000,
               "status": "passed"
             },
             "line": 25,
@@ -444,7 +444,7 @@
           },
           {
             "result": {
-              "duration": 8243000000,
+              "duration": 6927000000,
               "status": "passed"
             },
             "line": 28,
@@ -462,7 +462,7 @@
           },
           {
             "result": {
-              "duration": 2345000000,
+              "duration": 1743000000,
               "status": "passed"
             },
             "line": 29,
@@ -484,8 +484,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\r\n\tat com.cybertekTraining.pages.APIFunctions.getIntegerValueFromBodyPath(APIFunctions.java:40)\r\n\tat com.cybertekTraining.pages.teachers.ActionTeachers.searchCreatedTeachersID(ActionTeachers.java:28)\r\n\tat com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_searches_created_teacher_s_id(TeachersStepDefinitions.java:54)\r\n\tat ✽.user searches created teacher\u0027s id(file:///C:/Users/mkurt/.eclipse/NewTestCybertekApi/src/test/resources/features/createTeacher.feature:30)\r\n",
-              "duration": 43000000,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.cybertekTraining.pages.APIFunctions.getIntegerValueFromBodyPath(APIFunctions.java:63)\r\n\tat com.cybertekTraining.pages.teachers.ActionTeachers.searchCreatedTeachersID(ActionTeachers.java:36)\r\n\tat com.cybertekTraining.step_definitions.teachers.TeachersStepDefinitions.user_searches_created_teacher_s_id(TeachersStepDefinitions.java:54)\r\n\tat ✽.user searches created teacher\u0027s id(file:///C:/Users/mkurt/.eclipse/NewTestCybertekApi/src/test/resources/features/createTeacher.feature:30)\r\n",
+              "duration": 39000000,
               "status": "failed"
             },
             "line": 30,
@@ -548,24 +548,23 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-05-19T15:56:01.973Z",
+        "start_timestamp": "2020-05-19T17:40:14.429Z",
         "before": [
           {
             "result": {
-              "duration": 602000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
-            }
-          },
-          {
-            "result": {
-              "duration": 7813000000,
+              "duration": 8737000000,
               "status": "passed"
             },
             "match": {
               "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
             }
           }
         ],
@@ -576,7 +575,7 @@
         "after": [
           {
             "result": {
-              "duration": 1107000000,
+              "duration": 1029000000,
               "status": "passed"
             },
             "match": {
@@ -589,7 +588,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5566000000,
+              "duration": 6054000000,
               "status": "passed"
             },
             "line": 5,
@@ -607,7 +606,7 @@
           },
           {
             "result": {
-              "duration": 3223000000,
+              "duration": 1975000000,
               "status": "passed"
             },
             "line": 6,
@@ -629,7 +628,7 @@
           },
           {
             "result": {
-              "duration": 7180000000,
+              "duration": 3057000000,
               "status": "passed"
             },
             "line": 7,
@@ -647,7 +646,7 @@
           },
           {
             "result": {
-              "duration": 380000000,
+              "duration": 317000000,
               "status": "passed"
             },
             "line": 8,
@@ -659,7 +658,7 @@
           },
           {
             "result": {
-              "duration": 314000000,
+              "duration": 305000000,
               "status": "passed"
             },
             "line": 9,
@@ -719,7 +718,7 @@
           },
           {
             "result": {
-              "duration": 2313000000,
+              "duration": 1662000000,
               "status": "passed"
             },
             "line": 12,
@@ -743,23 +742,23 @@
         ]
       },
       {
-        "start_timestamp": "2020-05-19T15:56:30.479Z",
+        "start_timestamp": "2020-05-19T17:40:37.574Z",
         "before": [
+          {
+            "result": {
+              "duration": 6007000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          },
           {
             "result": {
               "status": "passed"
             },
             "match": {
               "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
-            }
-          },
-          {
-            "result": {
-              "duration": 6299000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
             }
           }
         ],
@@ -770,7 +769,7 @@
         "after": [
           {
             "result": {
-              "duration": 799000000,
+              "duration": 751000000,
               "status": "passed"
             },
             "match": {
@@ -783,7 +782,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3930000000,
+              "duration": 5116000000,
               "status": "passed"
             },
             "line": 5,
@@ -801,7 +800,7 @@
           },
           {
             "result": {
-              "duration": 1604000000,
+              "duration": 1708000000,
               "status": "passed"
             },
             "line": 6,
@@ -823,7 +822,7 @@
           },
           {
             "result": {
-              "duration": 2761000000,
+              "duration": 2423000000,
               "status": "passed"
             },
             "line": 7,
@@ -841,7 +840,7 @@
           },
           {
             "result": {
-              "duration": 172000000,
+              "duration": 122000000,
               "status": "passed"
             },
             "line": 8,
@@ -853,7 +852,7 @@
           },
           {
             "result": {
-              "duration": 277000000,
+              "duration": 234000000,
               "status": "passed"
             },
             "line": 9,
@@ -913,7 +912,7 @@
           },
           {
             "result": {
-              "duration": 90000000,
+              "duration": 100000000,
               "status": "passed"
             },
             "line": 12,
@@ -937,23 +936,23 @@
         ]
       },
       {
-        "start_timestamp": "2020-05-19T15:56:46.414Z",
+        "start_timestamp": "2020-05-19T17:40:54.038Z",
         "before": [
+          {
+            "result": {
+              "duration": 5598000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          },
           {
             "result": {
               "status": "passed"
             },
             "match": {
               "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5838000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
             }
           }
         ],
@@ -964,7 +963,7 @@
         "after": [
           {
             "result": {
-              "duration": 769000000,
+              "duration": 810000000,
               "status": "passed"
             },
             "match": {
@@ -977,7 +976,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4684000000,
+              "duration": 4619000000,
               "status": "passed"
             },
             "line": 5,
@@ -995,7 +994,7 @@
           },
           {
             "result": {
-              "duration": 1594000000,
+              "duration": 1475000000,
               "status": "passed"
             },
             "line": 6,
@@ -1017,7 +1016,7 @@
           },
           {
             "result": {
-              "duration": 2411000000,
+              "duration": 2189000000,
               "status": "passed"
             },
             "line": 7,
@@ -1035,7 +1034,7 @@
           },
           {
             "result": {
-              "duration": 165000000,
+              "duration": 122000000,
               "status": "passed"
             },
             "line": 8,
@@ -1047,7 +1046,7 @@
           },
           {
             "result": {
-              "duration": 222000000,
+              "duration": 251000000,
               "status": "passed"
             },
             "line": 9,
@@ -1107,7 +1106,7 @@
           },
           {
             "result": {
-              "duration": 133000000,
+              "duration": 98000000,
               "status": "passed"
             },
             "line": 12,
@@ -1131,23 +1130,23 @@
         ]
       },
       {
-        "start_timestamp": "2020-05-19T15:57:02.233Z",
+        "start_timestamp": "2020-05-19T17:41:09.202Z",
         "before": [
+          {
+            "result": {
+              "duration": 5539000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          },
           {
             "result": {
               "status": "passed"
             },
             "match": {
               "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5583000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
             }
           }
         ],
@@ -1158,7 +1157,7 @@
         "after": [
           {
             "result": {
-              "duration": 891000000,
+              "duration": 803000000,
               "status": "passed"
             },
             "match": {
@@ -1171,7 +1170,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3568000000,
+              "duration": 3539000000,
               "status": "passed"
             },
             "line": 5,
@@ -1189,7 +1188,7 @@
           },
           {
             "result": {
-              "duration": 1560000000,
+              "duration": 1357000000,
               "status": "passed"
             },
             "line": 6,
@@ -1211,7 +1210,7 @@
           },
           {
             "result": {
-              "duration": 2436000000,
+              "duration": 1502000000,
               "status": "passed"
             },
             "line": 7,
@@ -1229,7 +1228,7 @@
           },
           {
             "result": {
-              "duration": 136000000,
+              "duration": 164000000,
               "status": "passed"
             },
             "line": 8,
@@ -1241,7 +1240,7 @@
           },
           {
             "result": {
-              "duration": 231000000,
+              "duration": 225000000,
               "status": "passed"
             },
             "line": 9,
@@ -1301,7 +1300,7 @@
           },
           {
             "result": {
-              "duration": 180000000,
+              "duration": 114000000,
               "status": "passed"
             },
             "line": 12,
@@ -1325,23 +1324,23 @@
         ]
       },
       {
-        "start_timestamp": "2020-05-19T15:57:16.818Z",
+        "start_timestamp": "2020-05-19T17:41:22.448Z",
         "before": [
+          {
+            "result": {
+              "duration": 5726000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          },
           {
             "result": {
               "status": "passed"
             },
             "match": {
               "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5535000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
             }
           }
         ],
@@ -1352,7 +1351,7 @@
         "after": [
           {
             "result": {
-              "duration": 749000000,
+              "duration": 750000000,
               "status": "passed"
             },
             "match": {
@@ -1365,7 +1364,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3213000000,
+              "duration": 3298000000,
               "status": "passed"
             },
             "line": 5,
@@ -1383,7 +1382,7 @@
           },
           {
             "result": {
-              "duration": 1358000000,
+              "duration": 1490000000,
               "status": "passed"
             },
             "line": 6,
@@ -1405,7 +1404,7 @@
           },
           {
             "result": {
-              "duration": 2732000000,
+              "duration": 2236000000,
               "status": "passed"
             },
             "line": 7,
@@ -1423,7 +1422,7 @@
           },
           {
             "result": {
-              "duration": 667000000,
+              "duration": 509000000,
               "status": "passed"
             },
             "line": 8,
@@ -1435,7 +1434,7 @@
           },
           {
             "result": {
-              "duration": 259000000,
+              "duration": 235000000,
               "status": "passed"
             },
             "line": 9,
@@ -1495,7 +1494,7 @@
           },
           {
             "result": {
-              "duration": 12351000000,
+              "duration": 10396000000,
               "status": "passed"
             },
             "line": 12,
@@ -1519,23 +1518,23 @@
         ]
       },
       {
-        "start_timestamp": "2020-05-19T15:57:43.688Z",
+        "start_timestamp": "2020-05-19T17:41:47.089Z",
         "before": [
+          {
+            "result": {
+              "duration": 5547000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          },
           {
             "result": {
               "status": "passed"
             },
             "match": {
               "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5597000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
             }
           }
         ],
@@ -1546,7 +1545,7 @@
         "after": [
           {
             "result": {
-              "duration": 762000000,
+              "duration": 774000000,
               "status": "passed"
             },
             "match": {
@@ -1559,7 +1558,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5632000000,
+              "duration": 6935000000,
               "status": "passed"
             },
             "line": 5,
@@ -1577,7 +1576,7 @@
           },
           {
             "result": {
-              "duration": 1812000000,
+              "duration": 1473000000,
               "status": "passed"
             },
             "line": 6,
@@ -1599,7 +1598,7 @@
           },
           {
             "result": {
-              "duration": 2401000000,
+              "duration": 2821000000,
               "status": "passed"
             },
             "line": 7,
@@ -1617,7 +1616,7 @@
           },
           {
             "result": {
-              "duration": 187000000,
+              "duration": 145000000,
               "status": "passed"
             },
             "line": 8,
@@ -1629,7 +1628,7 @@
           },
           {
             "result": {
-              "duration": 253000000,
+              "duration": 228000000,
               "status": "passed"
             },
             "line": 9,
@@ -1689,7 +1688,7 @@
           },
           {
             "result": {
-              "duration": 276000000,
+              "duration": 254000000,
               "status": "passed"
             },
             "line": 12,
@@ -1713,24 +1712,23 @@
         ]
       },
       {
-        "start_timestamp": "2020-05-19T15:58:00.616Z",
+        "start_timestamp": "2020-05-19T17:42:05.268Z",
         "before": [
           {
             "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5522000000,
+              "duration": 5501000000,
               "status": "passed"
             },
             "match": {
               "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
             }
           }
         ],
@@ -1741,7 +1739,7 @@
         "after": [
           {
             "result": {
-              "duration": 884000000,
+              "duration": 758000000,
               "status": "passed"
             },
             "match": {
@@ -1754,7 +1752,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5901000000,
+              "duration": 3225000000,
               "status": "passed"
             },
             "line": 5,
@@ -1772,7 +1770,7 @@
           },
           {
             "result": {
-              "duration": 1507000000,
+              "duration": 1563000000,
               "status": "passed"
             },
             "line": 6,
@@ -1794,7 +1792,7 @@
           },
           {
             "result": {
-              "duration": 1705000000,
+              "duration": 1724000000,
               "status": "passed"
             },
             "line": 7,
@@ -1812,7 +1810,7 @@
           },
           {
             "result": {
-              "duration": 392000000,
+              "duration": 242000000,
               "status": "passed"
             },
             "line": 8,
@@ -1824,7 +1822,7 @@
           },
           {
             "result": {
-              "duration": 380000000,
+              "duration": 225000000,
               "status": "passed"
             },
             "line": 9,
@@ -1884,7 +1882,7 @@
           },
           {
             "result": {
-              "duration": 475000000,
+              "duration": 351000000,
               "status": "passed"
             },
             "line": 12,
@@ -1908,23 +1906,23 @@
         ]
       },
       {
-        "start_timestamp": "2020-05-19T15:58:17.386Z",
+        "start_timestamp": "2020-05-19T17:42:18.860Z",
         "before": [
+          {
+            "result": {
+              "duration": 5545000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
+            }
+          },
           {
             "result": {
               "status": "passed"
             },
             "match": {
               "location": "com.cybertekTraining.step_definitions.Hooks.setUpAPI()"
-            }
-          },
-          {
-            "result": {
-              "duration": 5623000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekTraining.step_definitions.Hooks.setUp()"
             }
           }
         ],
@@ -1935,7 +1933,7 @@
         "after": [
           {
             "result": {
-              "duration": 703000000,
+              "duration": 803000000,
               "status": "passed"
             },
             "match": {
@@ -1948,7 +1946,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4384000000,
+              "duration": 6269000000,
               "status": "passed"
             },
             "line": 5,
@@ -1966,7 +1964,7 @@
           },
           {
             "result": {
-              "duration": 1859000000,
+              "duration": 1403000000,
               "status": "passed"
             },
             "line": 6,
@@ -1988,7 +1986,7 @@
           },
           {
             "result": {
-              "duration": 2122000000,
+              "duration": 2153000000,
               "status": "passed"
             },
             "line": 7,
@@ -2006,7 +2004,7 @@
           },
           {
             "result": {
-              "duration": 5023000000,
+              "duration": 5047000000,
               "status": "passed"
             },
             "line": 8,
@@ -2018,7 +2016,7 @@
           },
           {
             "result": {
-              "duration": 225000000,
+              "duration": 259000000,
               "status": "passed"
             },
             "line": 9,
@@ -2078,7 +2076,7 @@
           },
           {
             "result": {
-              "duration": 5062000000,
+              "duration": 5015000000,
               "status": "passed"
             },
             "line": 12,

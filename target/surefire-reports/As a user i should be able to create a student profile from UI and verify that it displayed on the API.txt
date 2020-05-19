@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: As a user i should be able to create a student profile from UI and verify that it displayed on the API
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 160.901 s - in As a user i should be able to create a student profile from UI and verify that it displayed on the API
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 151.353 s - in As a user i should be able to create a student profile from UI and verify that it displayed on the API
